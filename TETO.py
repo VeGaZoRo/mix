@@ -25,6 +25,9 @@ async def ON_START_BOT(app: Client, message: types.Message):
         reply_markup=types.InlineKeyboardMarkup([
             [
                 types.InlineKeyboardButton(text='حذف حسابي ⛔...', callback_data="DELETACCOUNT")
+            ],
+            [
+                types.InlineKeyboardButton(text='استخراج الايبيهات', callback_data="GETAPI")
             ]
         ])
     )
